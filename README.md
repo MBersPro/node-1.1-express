@@ -24,3 +24,8 @@ app.post("/t+est", (req, res) => {
     res.send("TEST it is okay")
 })
 Означает, что "t" в запросе может быть один и более
+
+app.post("/t*est", (req, res) => {
+    res.send("TEST it is okay")
+})
+Означает, что вместо "t" в запросе могут находиться любые символы в любом количестве
